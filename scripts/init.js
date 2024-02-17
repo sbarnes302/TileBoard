@@ -27,11 +27,16 @@ window.initApp = function () {
          return;
       }
 
+      //ApiProvider.setInitOptions({
+      //   wsUrl: window.WS_URL_OVERRIDE || window.CONFIG.wsUrl,
+      //   authToken: window.AUTH_TOKEN_OVERRIDE || window.CONFIG.authToken,
+      //});
+      
       ApiProvider.setInitOptions({
-         wsUrl: window.WS_URL_OVERRIDE || window.CONFIG.wsUrl,
-         authToken: window.AUTH_TOKEN_OVERRIDE || window.CONFIG.authToken,
+         wsUrl: False,
+         authToken: False,
       });
-
+      
       tmhDynamicLocaleProvider.localeLocationPattern('./locales/{{locale}}.js');
 
       const clock24 = window.CONFIG.timeFormat === 24;
