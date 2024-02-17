@@ -28,15 +28,15 @@ window.initApp = function () {
       }
 
       //ApiProvider.setInitOptions({
-      //   wsUrl: window.WS_URL_OVERRIDE || window.CONFIG.wsUrl,
+      //  wsUrl: window.WS_URL_OVERRIDE || window.CONFIG.wsUrl,
       //   authToken: window.AUTH_TOKEN_OVERRIDE || window.CONFIG.authToken,
       //});
-      
+
       ApiProvider.setInitOptions({
-         wsUrl: False,
-         authToken: False,
+         wsUrl: window.CONFIG.wsUrl,
+         authToken: window.CONFIG.authToken,
       });
-      
+            
       tmhDynamicLocaleProvider.localeLocationPattern('./locales/{{locale}}.js');
 
       const clock24 = window.CONFIG.timeFormat === 24;
