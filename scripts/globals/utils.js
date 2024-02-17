@@ -83,8 +83,8 @@ export const debounce = function (func, wait, immediate) {
 
 export const toAbsoluteServerURL = function (path, serverUrlOverride = false) {
    const startsWithProtocol = path.indexOf('http') === 0;
-   //const url = startsWithProtocol ? path : (serverUrlOverride || window.SERVER_URL_OVERRIDE || window.CONFIG.serverUrl) + '/' + path;
-   const url = startsWithProtocol ? path : ("192.168.0.10") + '/' + path;
+   const url = startsWithProtocol ? path : (serverUrlOverride || window.SERVER_URL_OVERRIDE || window.CONFIG.serverUrl) + '/' + path;
+   //const url = startsWithProtocol ? path : ("192.168.0.10") + '/' + path;
   return normalizeUrlSlashes(url);
 };
 
