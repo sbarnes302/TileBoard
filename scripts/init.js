@@ -33,7 +33,7 @@ window.initApp = function () {
       //});
 
       ApiProvider.setInitOptions({
-         wsUrl: window.CONFIG.wsUrl,
+         wsUrl: window.WS_URL_OVERRIDE,
          authToken: window.CONFIG.authToken,
       });
             
