@@ -31,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/resoai/TileBoard.git"
+    "url": "git+https://github.com/sbarnes302/TileBoard.git"
   },
   "author": "Alexey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/resoai/TileBoard/issues"
+    "url": "https://github.com/sbarnes302/TileBoard/issues"
   },
-  "homepage": "https://github.com/resoai/TileBoard#readme",
+  "homepage": "https://github.com/sbarnes302/TileBoard#readme",
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/plugin-transform-runtime": "^7.18.6",
