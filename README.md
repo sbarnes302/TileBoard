@@ -1,3 +1,4 @@
+Test
 # TileBoard
 
 This is a simple yet highly customizable dashboard for Home Assistant. The main goal of this project was to create a simple dashboard with an easy way to edit and add functionality with minimum knowledge of javascript and html.
